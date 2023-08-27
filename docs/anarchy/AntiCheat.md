@@ -1,2 +1,14 @@
-[Matrix.rip](https://matrix.rip/)
-[Store](https://builtbybit.com/resources/matrix-anticheat.13999/)
+[//]: # ([Matrix.rip]&#40;https://matrix.rip/&#41;)
+
+[//]: # ([Store]&#40;https://builtbybit.com/resources/matrix-anticheat.13999/&#41;)
+**Q: Разрешены читы?**
+
+**A**: Да
+
+**Q: Разрешены все читы?**
+
+**A**: Нет
+
+**Q: Какие читы запрещены?**
+
+**A**: Мы вам не скажем. Придется использовать их, чтобы понять, на какие нет ограничений

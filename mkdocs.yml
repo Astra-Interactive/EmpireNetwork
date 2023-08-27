@@ -23,14 +23,13 @@ nav:
       - Items: anarchy/Items.md
       - Levels: anarchy/Levels.md
       - NPC: anarchy/NPC.md
-      - Plugins: anarchy/Plugins.md
       - RulesDiscord: anarchy/RulesDiscord.md
-      - RulesModerators: anarchy/RulesModerators.md
       - RulesServer: anarchy/RulesServer.md
       - Wipes: anarchy/Wipes.md
 
   - Moderators:
       - Overview: moderator/index.md
+      - RulesModerators: moderator/RulesModerators.md
 
   # Configuration
 theme:

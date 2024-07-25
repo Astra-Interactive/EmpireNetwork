@@ -1,39 +1,21 @@
-site_name: EmpireNetwork Documentation
-site_url: https://github.com/Astra-Interactive/EmpireNetwork
+site_name: EmpireProjekt Wiki
+site_url: https://EmpireProjekt.ru
 site_author: Roman Makeev
 site_description: >-
-  Empire Network documentation
+  Empire Projekt wiki
 
 # Repository
 repo_name: Astra-Interactive/EmpireNetwork
 repo_url: https://github.com/Astra-Interactive/EmpireNetwork
-edit_uri: ""
 
 # Copyright
-copyright: Copyright &copy; 2023 - 2023 Roman Makeev
+copyright: Copyright &copy; 2023 - 2024 Roman Makeev
 
-# Page tree
-nav:
-  - Anarchy:
-      - Overview: anarchy/index.md
-      - AntiCheat: anarchy/AntiCheat.md
-      - Clans: anarchy/Clans.md
-      - Commands: anarchy/Commands.md
-      - Economy: anarchy/Economy.md
-      - Items: anarchy/Items.md
-      - Levels: anarchy/Levels.md
-      - NPC: anarchy/NPC.md
-      - RulesDiscord: anarchy/RulesDiscord.md
-      - RulesServer: anarchy/RulesServer.md
-      - Wipes: anarchy/Wipes.md
 
-  - Moderators:
-      - Overview: moderator/index.md
-      - RulesModerators: moderator/RulesModerators.md
-
-  # Configuration
+# Configuration
 theme:
   name: 'material'
+  custom_dir: src/overrides
   # Don't include MkDocs' JavaScript
   include_search_page: false
   search_index_only: true
@@ -42,7 +24,34 @@ theme:
   language: en
   features:
     - navigation.tabs
-    - navigation.expand
+    #    - navigation.expand
+    - announce.dismiss
+    - content.action.edit
+    - content.action.view
+    - content.code.annotate
+    - content.code.copy
+    # - content.code.select
+    # - content.footnote.tooltips
+    # - content.tabs.link
+    - content.tooltips
+    # - header.autohide
+    # - navigation.expand
+    - navigation.footer
+    - navigation.indexes
+    # - navigation.instant
+    # - navigation.instant.prefetch
+    # - navigation.instant.progress
+    # - navigation.prune
+    - navigation.sections
+    - navigation.tabs
+    # - navigation.tabs.sticky
+    - navigation.top
+    - navigation.tracking
+    - search.highlight
+    - search.share
+    - search.suggest
+    - toc.follow
+    # - toc.integrate
   palette:
     scheme: slate
     primary: orange
@@ -57,22 +66,31 @@ theme:
 
 # Plugins
 plugins:
-  - search
+  - blog
+  - search:
+      separator: '[\s\u200b\-_,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
   - minify:
       minify_html: true
 
 # Customization
 extra:
   social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/orgs/Astra-Interactive/
+    - icon: fontawesome/brands/telegram
+      link: https://t.me/empiresmp
+    - icon: fontawesome/brands/vk
+      link: https://vk.com/empireprojekt
+    - icon: fontawesome/brands/discord
+      link: https://discord.com/invite/Gwukdr8
 
 # Extensions
 markdown_extensions:
-  - admonition
   - abbr
+  - admonition
   - attr_list
   - def_list
   - footnotes
-  - meta
   - md_in_html
   - toc:
       permalink: true
@@ -81,22 +99,26 @@ markdown_extensions:
   - pymdownx.betterem:
       smart_enable: all
   - pymdownx.caret
-  - pymdownx.critic
   - pymdownx.details
   - pymdownx.emoji:
-      emoji_index: !!python/name:materialx.emoji.twemoji
-      emoji_generator: !!python/name:materialx.emoji.to_svg
-  - pymdownx.highlight
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
   - pymdownx.inlinehilite
   - pymdownx.keys
   - pymdownx.magiclink:
+      normalize_issue_symbols: true
       repo_url_shorthand: true
       user: squidfunk
       repo: mkdocs-material
   - pymdownx.mark
   - pymdownx.smartsymbols
   - pymdownx.snippets:
-      check_paths: true
+      auto_append:
+        - includes/mkdocs.md
   - pymdownx.superfences:
       custom_fences:
         - name: mermaid
@@ -104,6 +126,26 @@ markdown_extensions:
           format: !!python/name:pymdownx.superfences.fence_code_format
   - pymdownx.tabbed:
       alternate_style: true
+      combine_header_slug: true
+      slugify: !!python/object/apply:pymdownx.slugs.slugify
+        kwds:
+          case: lower
   - pymdownx.tasklist:
       custom_checkbox: true
   - pymdownx.tilde
+
+# Page tree
+nav:
+  - "Начать играть":
+      - Overview: gettingstarted/index.md
+      - AntiCheat: gettingstarted/AntiCheat.md
+      - Clans: gettingstarted/Clans.md
+      - Commands: gettingstarted/Commands.md
+      - Economy: gettingstarted/Economy.md
+      - Items: gettingstarted/Items.md
+      - Levels: gettingstarted/Levels.md
+      - NPC: gettingstarted/NPC.md
+      - RulesDiscord: gettingstarted/RulesDiscord.md
+      - RulesServer: gettingstarted/RulesServer.md
+      - Wipes: gettingstarted/Wipes.md
+

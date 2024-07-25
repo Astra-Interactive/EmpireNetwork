@@ -1,9 +1,9 @@
 ---
 template: home.html
-title: Material for MkDocs
+title: EmpireWIKI
 social:
   cards_layout_options:
-    title: Documentation that simply works
+    title: Wiki для EmpireProjekt.ru
 ---
 
-Welcome to Material for MkDocs.ss
+Welcome to Material for MkDocs.

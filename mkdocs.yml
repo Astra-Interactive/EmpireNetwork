@@ -137,15 +137,14 @@ markdown_extensions:
 # Page tree
 nav:
   - "Начать играть":
-      - Overview: gettingstarted/index.md
-      - AntiCheat: gettingstarted/AntiCheat.md
-      - Clans: gettingstarted/Clans.md
-      - Commands: gettingstarted/Commands.md
-      - Economy: gettingstarted/Economy.md
-      - Items: gettingstarted/Items.md
-      - Levels: gettingstarted/Levels.md
-      - NPC: gettingstarted/NPC.md
-      - RulesDiscord: gettingstarted/RulesDiscord.md
-      - RulesServer: gettingstarted/RulesServer.md
-      - Wipes: gettingstarted/Wipes.md
+      - "Что за сервер": gettingstarted/index.md
+      - "Первый день": gettingstarted/firstentry.md
+      - "Правила": gettingstarted/rules.md
+      - "FAQ": gettingstarted/faq.md
+      - "Заработок": gettingstarted/money.md
+      - "Рейтинг": gettingstarted/rating_chat.md
+      - "Концепция душ": gettingstarted/souls.md
+      - "Города": gettingstarted/towny.md
+      - "Вайпы": gettingstarted/wipes.md
+      - "Новые предметы": gettingstarted/newitems.md
 

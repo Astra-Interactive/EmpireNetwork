@@ -5,20 +5,36 @@ This file was automatically generated - do not edit
 {% block tabs %}
 {{ super() }}
 <style>.md-header{position:initial}.md-main__inner{margin:0}.md-content{display:none}@media screen and (min-width:60em){.md-sidebar--secondary{display:none}}@media screen and (min-width:76.25em){.md-sidebar--primary{display:none}}</style>
-<section class="mdx-container">
+<section class="mdx-container" style="background: #FFA724">
     <div class="md-grid md-typeset">
         <div class="mdx-hero">
             <div class="mdx-hero__image" style="border-radius: 8px">
                 <img src="banner.png" alt="" width="1659" height="1200" draggable="false" style="border-radius: 8px">
             </div>
             <div class="mdx-hero__content">
-                <h1>Просто. Начни. Играть.</h1>
-                <p>Изучите вики нашего сервера, чтобы понимать, что к чему</p>
-                <p>Попробуйте найти на этой странице кнопку "Начать играть" и нажмите на нее</p>
+                <h1 style="color: #000000de">Просто. Начни. Играть.</h1>
+                <p style="color: #000000de">Изучите вики нашего сервера, чтобы понимать, что к чему</p>
+
+                <div class="md-buttons">
+                    <a href="{{ 'gettingstarted/' | url }}" title="Начать Играть" class="md-button" style="color: #000000de">
+                        Начать Играть
+                    </a>
+                    <a href="https://discord.com/invite/Gwukdr8" title="Join the Discord" class="md-button" style="color: #000000de">
+                        Вступить в Дискорд
+                    </a>
+                    <a href="https://t.me/empiresmp_discussion" title="Join the TG" class="md-button" style="color: #000000de">
+                        Присоединиться в TG-chat
+                    </a>
+                    <a href="https://boosty.to/empireprojekt/donate" title="Join the TG" class="md-button" style="color: #000000de">
+                        Поддержать на BoostY
+                    </a>
+                </div>
             </div>
         </div>
     </div>
 </section>
 {% endblock %}
-{% block content %}{% endblock %}
-{% block footer %}{% endblock %}
+{% block content %}
+{% endblock %}
+{% block footer %}
+{% endblock %}

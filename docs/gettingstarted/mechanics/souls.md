@@ -12,9 +12,9 @@
 
 Срок жизни душ 7 дней.
 
-Срок привязанности вашей души - 1 час. После истечения этого времени душа станет доступна всем!
+Срок привязки вашей души - 1 час. После истечения этого времени она станет доступна всем!
 
 
-![alt text](../media/soul.png "Title")
+![alt text](../../media/soul.png "Title")
 
-### [GitHub плагина](https://github.com/Astra-Interactive/DeadSoulsKT) 
+### [GitHub SoulKeeper](https://github.com/Astra-Interactive/SoulKeeper) 

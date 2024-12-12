@@ -23,8 +23,6 @@ theme:
   # Default values, taken from mkdocs_theme.yml
   language: en
   features:
-    - navigation.tabs
-    #    - navigation.expand
     - announce.dismiss
     - content.action.edit
     - content.action.view
@@ -35,12 +33,12 @@ theme:
     # - content.tabs.link
     - content.tooltips
     # - header.autohide
-    # - navigation.expand
+    - navigation.expand
     - navigation.footer
     - navigation.indexes
     # - navigation.instant
     # - navigation.instant.prefetch
-    # - navigation.instant.progress
+    - navigation.instant.progress
     # - navigation.prune
     - navigation.sections
     - navigation.tabs
@@ -55,7 +53,7 @@ theme:
   palette:
     scheme: slate
     primary: orange
-    accent: pink
+    accent: blue
   font:
     text: Roboto
     code: Roboto Mono
@@ -134,17 +132,30 @@ markdown_extensions:
       custom_checkbox: true
   - pymdownx.tilde
 
+not_in_nav: |
+  gettingstarted/**/*.md
+  gettingstarted/*.md
+
 # Page tree
 nav:
   - "Начать играть":
-      - "Что за сервер": gettingstarted/index.md
-      - "Первый день": gettingstarted/firstentry.md
-      - "Правила": gettingstarted/rules.md
-      - "FAQ": gettingstarted/faq.md
-      - "Заработок": gettingstarted/money.md
-      - "Рейтинг": gettingstarted/rating_chat.md
-      - "Концепция душ": gettingstarted/souls.md
-      - "Города": gettingstarted/towny.md
-      - "Вайпы": gettingstarted/wipes.md
-      - "Новые предметы": gettingstarted/newitems.md
+      - gettingstarted/index.md
+      - "Первые шаги": gettingstarted/firstentry.md
+      - "Мобильное Приложение": gettingstarted/mobile.md
+      - "Основное":
+          - "Вайпы": gettingstarted/general/wipes.md
+          - "Правила": gettingstarted/general/rules.md
+          - "FAQ": gettingstarted/general/faq.md
+      - "Экономика":
+          - "Основной заработок": gettingstarted/money/main.md
+          - "Квесты": gettingstarted/money/quests.md
+      - "Механики":
+          - "Общее": gettingstarted/mechanics/general.md
+          - "Рейтинг": gettingstarted/mechanics/rating.md
+          - "Концепция душ": gettingstarted/mechanics/souls.md
+          - "Игровой чат": gettingstarted/mechanics/chat.md
+          - "Мир Артов и Карта": gettingstarted/mechanics/arts_map.md
+          - "Города": gettingstarted/mechanics/towns.md
+          - "Новые предметы": gettingstarted/newitems.md
+          - "Читы": gettingstarted/mechanics/cheats.md
 

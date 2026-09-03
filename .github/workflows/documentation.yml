@@ -1,17 +1,43 @@
-name: build and deploy material mkdocs to gh-pages
+# Builds the MkDocs (Material) site and publishes it to the gh-pages branch.
+# GitHub Pages must be configured to serve from the gh-pages branch.
+name: Documentation
+
 on:
   push:
     branches:
       - master
   workflow_dispatch:
+
+# GITHUB_TOKEN is read-only by default in organizations, but read/write in
+# personal accounts. Declaring the permissions explicitly makes the workflow
+# behave identically in both cases: mkdocs gh-deploy needs to push gh-pages.
+permissions:
+  contents: write
+
+concurrency:
+  group: documentation-${{ github.ref }}
+  cancel-in-progress: true
+
 jobs:
-  deploy:
+  deploy-docs:
+    name: Build and deploy MkDocs site
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-python@v2
+      - name: Checkout repository
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+
+      - name: Configure Git identity for gh-pages commits
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+      - name: Set up Python
+        uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
         with:
-          python-version: 3.x
-      - run: pip install mkdocs-material
-      - run: pip install mkdocs-minify-plugin
-      - run: mkdocs gh-deploy --force
+          python-version: "3.x"
+
+      - name: Install MkDocs Material and plugins
+        run: pip install mkdocs-material mkdocs-minify-plugin
+
+      - name: Build and deploy to gh-pages
+        run: mkdocs gh-deploy --force

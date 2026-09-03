@@ -163,3 +163,15 @@ nav:
           - "Картины": gettingstarted/mechanics/artmap.md
   - "EmpireVanilla":
       - vanilla/index.md
+      - "Новичку": vanilla/start.md
+      - "Правила": vanilla/rules.md
+      - "Роли": vanilla/roles.md
+      - "Миры и карта": vanilla/worlds.md
+      - "События": vanilla/events.md
+      - "Механики":
+          - "Исследование мира": vanilla/mechanics/explore.md
+          - "Строительство и декор": vanilla/mechanics/building.md
+          - "Фермы и животные": vanilla/mechanics/farming.md
+          - "Транспорт и редстоун": vanilla/mechanics/transport.md
+          - "Чат и почта": vanilla/mechanics/chat.md
+          - "Полезные мелочи": vanilla/mechanics/misc.md

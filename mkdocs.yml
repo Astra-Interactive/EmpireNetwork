@@ -9,7 +9,7 @@ repo_name: Astra-Interactive/EmpireNetwork
 repo_url: https://github.com/Astra-Interactive/EmpireNetwork
 
 # Copyright
-copyright: Copyright &copy; 2023 - 2024 Roman Makeev
+copyright: Copyright &copy; 2023 - 2026 Roman Makeev
 
 
 # Configuration
@@ -51,9 +51,20 @@ theme:
     - toc.follow
     # - toc.integrate
   palette:
-    scheme: slate
-    primary: orange
-    accent: blue
+    # Первая запись — тема по умолчанию (светлая, палитра Warm Retro).
+    # Обе схемы (warm-retro, warm-retro-dark) описаны в src/overrides/assets/stylesheets/warm-retro.css
+    - scheme: warm-retro
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/weather-sunny
+        name: Переключить на тёмную тему
+    - scheme: warm-retro-dark
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/weather-night
+        name: Переключить на светлую тему
   font:
     text: Roboto
     code: Roboto Mono
